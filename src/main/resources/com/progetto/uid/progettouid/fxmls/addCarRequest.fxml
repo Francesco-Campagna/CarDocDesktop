@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="32.0" layoutY="35.0" prefHeight="326.0" prefWidth="600.0" spacing="25.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Il suo veicolo non è presente nel catalogo?" textAlignment="CENTER" wrappingWidth="598.7531127929688">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="117.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La preghiamo di fornire le seguenti informazioni sul proprio veicolo e faremo in modo di aggiungerlo al nostro catalogo il più presto possibile*:" textAlignment="JUSTIFY" wrappingWidth="599.4765626192093">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <VBox alignment="CENTER" prefHeight="95.0" prefWidth="600.0" spacing="8.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="34.0" prefWidth="388.0">
+                     <children>
+                        <TextField focusTraversable="false" prefHeight="34.0" prefWidth="350.0" promptText="Inserisca la marca">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="388.0">
+                     <children>
+                        <TextField focusTraversable="false" prefHeight="34.0" prefWidth="350.0" promptText="Inserisca il modello">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="*L'aggiunta del proprio veicolo al catalogo può richiedere da 30 a 90 giorni" wrappingWidth="593.8094482421875" />
+            <HBox alignment="CENTER" prefHeight="26.0" prefWidth="388.0">
+               <children>
+                  <Button fx:id="addCarRequest" alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="388.0" text="Invia " textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

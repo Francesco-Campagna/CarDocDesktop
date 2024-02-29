@@ -1,0 +1,18 @@
+* {
+  upperBackgroundColor: #132530;
+  bottomBackgroundColor: #d3d3d3;
+  buttonColor: #0477EF;
+  backgroundButtonColor: #035EBD;
+  backgroundColor: #E3E3E3;
+  textColor: #000000;
+  boxColor: #FFFFFF;
+  purchaseButtonColor: linear-gradient(to bottom, #E40A39, #E84F38);
+  purchaseButtonColorHover: #e40a0d;
+  grey: #d3d3d3;
+  orange: #ff9900;
+  vBoxColor: white;
+  hBoxColor: white;
+  blueColor: #0477ef;
+  scrollBarColor: #b3b3b3;
+  scrollBarHover: #8c8c8c;
+}

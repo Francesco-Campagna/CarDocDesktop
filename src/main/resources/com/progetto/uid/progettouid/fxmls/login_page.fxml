@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loginAnchorPane" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#enterPressed" prefHeight="666.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.progetto.uid.progettouid.Controller.LoginController">
+   <children>
+      <AnchorPane fx:id="loginUpperPane" layoutY="-17.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="carDocLogoIcon" fitHeight="164.0" fitWidth="180.0" onMouseClicked="#returnHomeAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Loghi/Loghi/CarDocLogo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <ImageView fx:id="returnHomeImage" fitHeight="52.0" fitWidth="52.0" onMouseClicked="#returnHomeAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Loghi/Loghi/download.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" layoutX="108.0" layoutY="162.0" prefHeight="485.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="181.0">
+         <children>
+            <Pane fx:id="boxLogin" prefHeight="458.0" prefWidth="460.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="458.0" prefWidth="460.0" spacing="12.0">
+                     <children>
+                        <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Loghi/Loghi/userLogin.png" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Effettuare l'accesso" textAlignment="CENTER" wrappingWidth="398.486328125">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserisca un indirizzo e-mail valido e la password" textAlignment="CENTER" wrappingWidth="436.32080078125">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="emailField" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#resetWrongText" prefHeight="34.0" prefWidth="388.0" promptText="Email">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </TextField>
+                        <PasswordField fx:id="passwordField" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#resetWrongText" prefHeight="33.0" prefWidth="388.0" promptText="Password">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </PasswordField>
+                        <Text fx:id="wrongLoginText" fill="#f20c0c" strokeType="OUTSIDE" strokeWidth="0.0" text="Email o password errati!" visible="false" wrappingWidth="136.13671875">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Text>
+                        <Text fx:id="forgotPassword" focusTraversable="true" onMouseClicked="#forgotPasswordAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Password dimenticata?" textAlignment="CENTER" underline="true" wrappingWidth="312.720703125">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="loginButton" mnemonicParsing="false" onAction="#login" prefHeight="34.0" prefWidth="388.0" text="Effettuare l'accesso" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Se non si dispone ancora di un account CARDOC, " textAlignment="CENTER" wrappingWidth="411.986328125" />
+                        <Text fx:id="registerNow" fill="#0477ef" focusTraversable="true" onMouseClicked="#registerNowAction" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTRARSI ADESSO." textAlignment="CENTER" wrappingWidth="249.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

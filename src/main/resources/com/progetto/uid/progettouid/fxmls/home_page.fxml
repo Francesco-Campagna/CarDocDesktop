@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="totalAnchorPane" onKeyPressed="#enterPressed" prefHeight="666.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.progetto.uid.progettouid.Controller.HomePageController">
+   <children>
+      <AnchorPane fx:id="upperPane" prefHeight="204.0" prefWidth="1350.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="63.0" layoutY="185.0" prefHeight="28.0" prefWidth="1225.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="185.0">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" onMouseClicked="#cushionsAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Loghi/Loghi/icone%20shop/ammortizzatori.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="cushionsText" fill="LIGHTGRAY" onMouseClicked="#cushionsAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Ammortizzatori" wrappingWidth="97.93670654296875">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Separator orientation="VERTICAL" prefHeight="45.0" prefWidth="45.0" visible="false" />
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#filtersAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Loghi/Loghi/icone%20shop/filtro.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="filtersText" fill="LIGHTGRAY" layoutX="55.0" layoutY="38.0" onMouseClicked="#filtersAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Filtri" wrappingWidth="29.13671875">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="145.0" layoutY="10.0" orientation="VERTICAL" prefHeight="45.0" prefWidth="45.0" visible="false" />
+                  <ImageView fitHeight="45.0" fitWidth="59.0" layoutX="190.0" layoutY="10.0" onMouseClicked="#brakesAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Loghi/Loghi/icone%20shop/brake.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="brakesText" fill="LIGHTGRAY" layoutX="235.0" layoutY="38.0" onMouseClicked="#brakesAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Freni" wrappingWidth="31.13671875">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="325.0" layoutY="10.0" orientation="VERTICAL" prefHeight="45.0" prefWidth="45.0" visible="false" />
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="370.0" layoutY="10.0" onMouseClicked="#lightingAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Loghi/Loghi/icone%20shop/illuminazione.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="lightingText" fill="#d1d1d1" layoutX="415.0" layoutY="38.0" onMouseClicked="#lightingAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Illuminazione" wrappingWidth="79.13671875">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="505.0" layoutY="10.0" orientation="VERTICAL" prefHeight="45.0" prefWidth="45.0" visible="false" />
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="550.0" layoutY="10.0" onMouseClicked="#oilAndLiquidsAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Loghi/Loghi/icone%20shop/oli%20e%20liquidi.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="oilAndLiquidsText" fill="LIGHTGRAY" layoutX="595.0" layoutY="38.0" onMouseClicked="#oilAndLiquidsAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Oli e liquidi" wrappingWidth="68.13671875">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="685.0" layoutY="10.0" orientation="VERTICAL" prefHeight="45.0" prefWidth="45.0" visible="false" />
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="730.0" layoutY="10.0" onMouseClicked="#tyresAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Loghi/Loghi/icone%20shop/tire.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="tyresText" fill="LIGHTGRAY" layoutX="775.0" layoutY="38.0" onMouseClicked="#tyresAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Pneumatici" wrappingWidth="66.13671875">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="865.0" layoutY="10.0" orientation="VERTICAL" prefHeight="45.0" prefWidth="45.0" visible="false" />
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="910.0" layoutY="10.0" onMouseClicked="#cleanlinessCarAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Loghi/Loghi/icone%20shop/pulizia.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="cleanlinessCarText" fill="LIGHTGRAY" layoutX="955.0" layoutY="38.0" onMouseClicked="#cleanlinessCarAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Pulizia auto" wrappingWidth="69.13671875">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="873.0" layoutY="10.0" orientation="VERTICAL" prefHeight="45.0" prefWidth="45.0" visible="false" />
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="918.0" layoutY="10.0" onMouseClicked="#exhaustAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Loghi/Loghi/icone%20shop/scarico.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="exhaustText" fill="LIGHTGRAY" layoutX="963.0" layoutY="37.0" onMouseClicked="#exhaustAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistema di scarico" wrappingWidth="115.3367919921875">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutY="97.0" prefHeight="90.0" prefWidth="1414.0" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="97.0">
+               <children>
+                  <Separator orientation="VERTICAL" prefHeight="101.0" prefWidth="356.0" visible="false" />
+                  <TextField fx:id="searchBar" focusTraversable="false" layoutX="18.0" prefHeight="37.0" prefWidth="380.0" promptText="Inserisca il nome del prodotto" />
+                  <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchButtonAction" prefHeight="37.0" prefWidth="86.0" text="Ricerca" textFill="WHITE" />
+                  <Separator orientation="VERTICAL" prefHeight="101.0" prefWidth="150.0" visible="false" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="235.0">
+                     <children>
+                        <ImageView fx:id="cartIcon" fitHeight="54.0" fitWidth="58.0" onMouseClicked="#cartAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Loghi/Loghi/cart.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="priceText" fill="#ff9900" strokeType="OUTSIDE" strokeWidth="0.0" text="0,00€" textAlignment="RIGHT" wrappingWidth="178.13671875">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="123.0" prefWidth="1413.0" AnchorPane.bottomAnchor="125.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="54.0" fitWidth="58.0" onMouseClicked="#upgradeInformation" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Loghi/Loghi/premium.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="textUpgrade" fill="LIGHTGRAY" onMouseClicked="#upgradeInformation" strokeType="OUTSIDE" strokeWidth="0.0" text="Effettua l'upgrade a premium" wrappingWidth="258.13671875">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Separator orientation="VERTICAL" prefHeight="123.0" prefWidth="278.0" visible="false" />
+                  <ImageView fx:id="carDocIcon" fitHeight="123.0" fitWidth="152.0" onMouseClicked="#getHomeAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Loghi/Loghi/CarDocLogo.png" />
+                     </image>
+                  </ImageView>
+                  <Separator orientation="VERTICAL" prefHeight="123.0" prefWidth="313.0" visible="false" />
+                  <HBox alignment="CENTER" prefHeight="90.0" prefWidth="272.0">
+                     <children>
+                        <ImageView fx:id="garageIcon" fitHeight="54.0" fitWidth="58.0" onMouseClicked="#garageAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Loghi/Loghi/garage.png" />
+                           </image>
+                        </ImageView>
+                        <Separator orientation="VERTICAL" prefHeight="104.0" prefWidth="6.0">
+                           <HBox.margin>
+                              <Insets bottom="35.0" top="35.0" />
+                           </HBox.margin>
+                        </Separator>
+                        <ImageView fx:id="wishlistIcon" fitHeight="54.0" fitWidth="58.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#wishlistAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Loghi/Loghi/wishlist.png" />
+                           </image>
+                        </ImageView>
+                        <Separator orientation="VERTICAL" prefHeight="200.0">
+                           <HBox.margin>
+                              <Insets bottom="35.0" top="35.0" />
+                           </HBox.margin>
+                        </Separator>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <HBox fx:id="accessHbox" alignment="CENTER_LEFT" onMouseClicked="#LoginAction" prefHeight="29.0" prefWidth="116.0">
+                                 <children>
+                                    <ImageView fx:id="loginIcon" fitHeight="54.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Loghi/Loghi/user.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fx:id="loginText" fill="LIGHTGRAY" strokeType="OUTSIDE" strokeWidth="0.0" text="Accesso" wrappingWidth="61.13671875">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Separator fx:id="logoutSeparator" orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                        <ImageView fx:id="logoutImage" fitHeight="54.0" fitWidth="58.0" onMouseClicked="#logoutAction" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../Loghi/Loghi/Logout.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="249.0" prefHeight="417.0" prefWidth="1350.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="249.0">
+         <children>
+            <HBox fx:id="bottomPane" alignment="CENTER" layoutY="-4.0" prefHeight="366.0" prefWidth="1350.0" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-4.0" />
+            <HBox fx:id="bottomBoxPage" alignment="CENTER" layoutX="-15.0" layoutY="349.0" prefHeight="54.0" prefWidth="1350.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Text fx:id="changeTheme" onMouseClicked="#changeThemeAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Cambia tema" />
+                  <Text fx:id="privacyInformation" layoutX="674.0" layoutY="41.0" onMouseClicked="#privacyInformationAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Informativa sulla privacy" />
+                  <Text fx:id="generalCondition" layoutX="685.0" layoutY="41.0" onMouseClicked="#generalConditionAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Condizioni generali di uso e vendita" />
+                  <Text fx:id="carDocInformation" layoutX="697.0" layoutY="41.0" onMouseClicked="#carDocInformationAction" strokeType="OUTSIDE" strokeWidth="0.0" text="A proposito di CarDoc" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

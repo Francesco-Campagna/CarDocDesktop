@@ -1,0 +1,528 @@
+* {
+    -fx-font-family: 'Roboto';
+    -fx-fill: textColor;
+}
+
+.button {
+ -fx-text-fill: white;
+ -fx-background-color: buttonColor;
+ -fx-cursor: hand;
+}
+
+.button:hover {
+ -fx-background-color: backgroundButtonColor;
+}
+
+
+#searchButton: pressed {
+ -fx-scale-x: 0.95;
+ -fx-scale-y: 0.95;
+}
+
+#brakesText, #cleanlinessCarText, #cushionsText, #exhaustText, #filtersText, #lightingText, #oilAndLiquidsText, #tyresText, #textUpgrade, #loginText{
+ -fx-fill: white;
+}
+
+#upperPane {
+ -fx-background-color: upperBackgroundColor;
+}
+
+#totalAnchorPane {
+ -fx-background-color: backgroundColor;
+}
+
+#bottomPane {
+ -fx-background-color: BottomBackgroundColor;
+}
+
+#priceText {
+ -fx-fill: orange;
+}
+
+#loginButton, #addCarRequest{
+ -fx-font-size: 24px;
+}
+
+#loginButton: pressed {
+-fx-scale-x: 0.95;
+-fx-scale-y: 0.95;
+}
+
+
+
+#brakesText:hover,#cleanlinessCarText:hover,#cushionsText:hover,#exhaustText:hover,#filtersText:hover,#lightingText:hover,#oilAndLiquidsText:hover,#tyresText:hover {
+ -fx-fill: #ff9900; /* Colore arancio per il testo delle label */
+ -fx-font-size: 12px; /* Dimensione del carattere 16px per il testo personalizzato */
+ -fx-cursor: hand;  /*appare la mano quando il cursore ci va sopra*/
+}
+
+#garageIcon:hover,#accessHbox:hover,#wishlistIcon:hover,#cartIcon:hover, #logoutImage:hover {/*rimpicciolimento dell'immagine quando il cursore ci va sopra*/
+  -fx-scale-x: 0.9;
+  -fx-scale-y: 0.9;
+  -fx-cursor: hand; /*appare la mano quando il cursore ci va sopra*/
+
+}
+
+#carDocIcon:hover{
+ -fx-cursor: hand; /*appare la mano quando il cursore ci va sopra*/
+}
+
+#textLogin:hover{
+ -fx-cursor: hand; /*appare la mano quando il cursore ci va sopra*/
+ -fx-font-size: 15px; /*Dimensione del carattere 16px per il testo personalizzato */
+}
+
+#textUpgrade:hover{
+  -fx-cursor: hand; /*appare la mano quando il cursore ci va sopra*/
+  -fx-font-size: 19px; /*Dimensione del carattere 16px per il testo personalizzato*/
+}
+
+/* CATEGORY PAGE */
+#vBoxCategoryPage, #scrollPaneCategoryPage {
+ -fx-background-color: backgroundColor;
+}
+
+
+                                                                                           /* INIZIO CARRELLO */
+#vBoxCartPage, #scrollPaneCart, #anchorPaneCart {
+ -fx-background-color: backgroundColor;
+}
+
+#checkOutBox {
+ -fx-background-color: boxColor;
+}
+
+
+#purchaseButton {
+ -fx-text-fill: textColor;
+ -fx-background-color: purchaseButtonColor;
+ -fx-cursor: hand;
+ -fx-font-size: 15px;
+}
+
+#purchaseButton:hover {
+ -fx-background-color: purchaseButtonColorHover;
+}
+
+#purchaseButton:active {
+ -fx-background-color: blue;
+}
+
+#arrowContinuePurchase, #continuePurchaseText{
+ -fx-cursor: hand;
+}
+
+#totalOrderText, #yourOrderText, #totalPrice1 {
+ -fx-font-size: 14px;
+}
+
+#titleCartProd1, #titleCartProd2, #titleCartProd3, #titleCartProd4, #titleCartProd5, #titleCartProd6 {
+ -fx-font-size: 30px;
+}
+
+#cartItemPriceText1, #cartItemPriceText2, #cartItemPriceText3, #cartItemPriceText4, #cartItemPriceText5, #cartItemPriceText6 {
+ -fx-font-size: 25px;
+}
+
+#totalPrice3 {
+ -fx-font-size: 15px;
+}
+
+#checkOutBox {
+ -fx-background-radius: 5px;
+}
+
+#purchaseButton: pressed {
+ -fx-scale-x: 0.95;
+ -fx-scale-y: 0.95;
+}
+
+#lessButton1: pressed , #lessButton2: pressed , #lessButton3: pressed , #lessButton4: pressed , #lessButton5: pressed , #lessButton6: pressed , #plusButton1: pressed , #plusButton2: pressed , #plusButton3: pressed , #plusButton4: pressed , #plusButton5: pressed , #plusButton6: pressed , #removeItemButton1: pressed , #removeItemButton2: pressed , #removeItemButton3: pressed , #removeItemButton4: pressed , #removeItemButton5: pressed , #removeItemButton6: pressed {
+ -fx-scale-x: 0.95;
+ -fx-scale-y: 0.95;
+}
+
+
+                                                                                           /* FINE CARELLO*/
+
+
+                                                                                           /* INIZIO LOGIN*/
+#registerNow {
+ -fx-fill: blueColor;
+}
+
+#wrongLoginText {
+ -fx-fill: #f20c0c;
+}
+
+#closeLoginScene, #registerNow, #forgotPassword, #returnHomeImage, #carDocLogoIcon{
+ -fx-cursor: hand;
+}
+
+#loginUpperPane {
+ -fx-background-color: upperBackgroundColor;
+}
+
+#loginAnchorPane {
+ -fx-background-color: backgroundColor;
+}
+
+#boxLogin {
+ -fx-background-color: boxColor;
+ -fx-background-radius: 15px;
+}
+
+                                                                                           /* PASSWORD DIMENTICATA */
+
+#hBoxRecoveryPage, #recoveryAnchorPane {
+ -fx-background-color: backgroundColor;
+}
+
+                                                                                           /* FINE LOGIN*/
+
+                                                                                           /* INIZIO REGISTRATION*/
+
+
+#registrationUpperPane {
+ -fx-background-color: upperBackgroundColor;
+}
+
+#registrationAnchorPane {
+ -fx-background-color: backgroundColor;
+}
+
+#boxRegistration {
+ -fx-background-color: boxColor;
+ -fx-background-radius: 15px;
+}
+
+#createAccountButton {
+ -fx-font-size: 24px;
+ -fx-cursor: hand;
+}
+
+#privacyInformationText {
+ -fx-cursor: hand;
+ -fx-fill: blueColor;
+}
+
+                                                                                           /* FINE REGISTRATION*/
+
+                                                                                           /* INIZIO RECOVERY PAGE */
+
+#recoveryUpperPane {
+ -fx-background-color: upperBackgroundColor;
+}
+
+#boxRecoveryPassword {
+ -fx-background-color: boxColor;
+ -fx-background-radius: 15px;
+}
+
+#recoveryPasswordButton {
+ -fx-font-size: 24px;
+ -fx-cursor: hand;
+}
+
+#clientService {
+ -fx-fill: blueColor;
+ -fx-cursor: hand;
+}
+
+#wrongEmailText {
+ -fx-fill: red;
+}
+
+                                                                                           /* FINE RECOVERY PAGE */
+
+                                                                                           /* INIZIO GARAGE*/
+
+
+#hBoxGarage, #vBoxGarage {
+ -fx-background-color: backgroundColor;
+}
+
+
+#hBox {
+ -fx-background-radius: 15px;
+}
+
+#scrollPaneGarage {
+ -fx-background-color: backgroundColor;
+ -fx-background-radius: 15px;
+}
+
+#boxAddCar {
+ -fx-cursor: hand;
+ -fx-background-color: boxColor;
+ -fx-background-radius: 15px;
+}
+
+#carText1, #carText2 {
+ -fx-font-size: 24px;
+}
+
+#addCarText {
+ -fx-font-size: 15px;
+}
+
+#addCarButton {
+ -fx-cursor: hand;
+ -fx-font-size: 24px;
+}
+
+#clickHereText{
+ -fx-fill: blueColor;
+}
+
+#addCarButton: pressed {
+ -fx-scale-x: 0.95;
+ -fx-scale-y: 0.95;
+}
+
+.combo-box .list-cell .text{
+ -fx-fill: black;
+}
+
+
+                                                                                           /* FINE GARAGE*/
+
+                                                                                           /* INIZIO HOMEPAGE BOX */
+
+#buyButton1, #buyButton2, #buyButton3, #buyButton4, #buyButton5, #buyButton6, #buyButton7, #buyButton8, #buyButton9, #buyButton10, #buyButton11, #buyButton12, #buyButton13, #buyButton14, #buyButton15, #buyButton16, #buyButton17, #buyButton18{
+ -fx-background-color: purchaseButtonColor;
+ -fx-text-fill: textColor;
+}
+
+#buyButton1:hover, #buyButton2:hover, #buyButton3:hover, #buyButton4:hover, #buyButton5:hover, #buyButton6:hover, #buyButton7:hover, #buyButton8:hover, #buyButton9:hover, #buyButton10:hover, #buyButton11:hover, #buyButton12:hover, #buyButton13:hover, #buyButton14:hover, #buyButton15:hover, #buyButton16:hover, #buyButton17:hover, #buyButton18:hover{
+ -fx-background-color: purchaseButtonColorHover;
+ -fx-text-fill: textColor;
+}
+
+#bottomBoxPage {
+ -fx-background-color: upperBackgroundColor;
+}
+
+#changeTheme, #privacyInformation, #generalCondition, #carDocInformation {
+ -fx-fill: white;
+}
+
+#changeTheme:hover, #privacyInformation:hover, #generalCondition:hover, #carDocInformation:hover {
+ -fx-cursor: hand;
+ -fx-font-size: 11px;
+}
+
+#vBoxProduct1, #vBoxProduct2, #vBoxProduct3, #vBoxProduct4, #vBoxProduct5, #vBoxProduct6, #vBoxProduct7, #vBoxProduct8, #vBoxProduct9, #vBoxProduct10, #vBoxProduct11, #vBoxProduct12, #vBoxProduct13, #vBoxProduct14, #vBoxProduct15 {
+ -fx-background-color: vBoxColor;
+ -fx-background-radius: 10px;
+
+}
+
+#hBox1, #hBox2, #hBox3, #totalBox {
+ -fx-background-color: backgroundColor;
+}
+
+
+
+                                                                                           /* FINE HOMEPAGE BOX */
+
+                                                                                           /* INIZIO BOX PAGE */
+
+#totalVboxBoxPage, #scrollPaneBoxPage {
+ -fx-background-color: backgroundColor;
+}
+
+#vBoxProduct1:hover, #vBoxProduct2:hover, #vBoxProduct3:hover, #vBoxProduct4:hover, #vBoxProduct5:hover, #vBoxProduct6:hover, #vBoxProduct7:hover, #vBoxProduct8:hover, #vBoxProduct9:hover, #vBoxProduct10:hover, #vBoxProduct11:hover, #vBoxProduct12:hover, #vBoxProduct13:hover, #vBoxProduct14:hover, #vBoxProduct15:hover{
+ -fx-cursor: hand;
+}
+
+#titleText1, #titleText2, #titleText3, #titleText4, #titleText5, #titleText6, #titleText7, #titleText8, #titleText9, #titleText10, #titleText11, #titleText12, #titleText13, #titleText14, #titleText15, #priceText1, #priceText2, #priceText3, #priceText4, #priceText5, #priceText6, #priceText7, #priceText8, #priceText9, #priceText10, #priceText11, #priceText12, #priceText13, #priceText14, #priceText15 {
+ -fx-font-size: 20px;
+}
+
+#sellerText1, #sellerText2, #sellerText3, #sellerText4, #sellerText5, #sellerText6, #sellerText7, #sellerText8, #sellerText9, #sellerText10, #sellerText11, #sellerText12, #sellerText13, #sellerText14, #sellerText15 {
+ -fx-font-size: 11px;
+}
+
+
+
+
+
+
+                                                                                           /* FINE BOX PAGE */
+
+                                                                                           /* INIZIO PRODUCT VIEW */
+#totalVbox, #scrollPaneProductView {
+ -fx-background-color: backgroundColor;
+}
+
+#productImageBox {
+ -fx-background-color: vBoxColor;
+ -fx-background-radius: 10px;
+}
+
+#productField, #priceText {
+ -fx-font-size: 30px;
+}
+
+#descriptionField, #SimilarProducts, #titleSimilarProductText1, #titleSimilarProductText2, #titleSimilarProductText3, #titleSimilarProductText4, #titleSimilarProductText5 {
+ -fx-font-size: 20px;
+}
+
+#freeReturnsText, #freeShippingText, #availabilityText, #amountText, #amountField{
+ -fx-font-size: 16px;
+}
+
+#paymentText, #shippingText, #seller, #secureTransationText, #carDocText, #sellerText {
+ -fx-font-size: 12;
+}
+
+#lessButton, #plusButton, #addToCartButton, #addToWishlistButton{
+ -fx-font-size: 16px;
+ -fx-background-color: purchaseButtonColor;
+}
+
+#vBoxSimilarProduct1, #vBoxSimilarProduct2, #vBoxSimilarProduct3, #vBoxSimilarProduct4, #vBoxSimilarProduct5 {
+ -fx-background-color: vBoxColor;
+ -fx-background-radius: 10px;
+}
+
+#vBoxSimilarProduct1:hover, #vBoxSimilarProduct2:hover, #vBoxSimilarProduct3:hover, #vBoxSimilarProduct4:hover, #vBoxSimilarProduct5:hover {
+  -fx-cursor: hand;
+}
+
+#actionBox {
+ -fx-border-width: 1px;                                 //spessore della linea
+ -fx-border-radius: 10px;
+ -fx-border-color: #585858;
+}
+
+#addToCartButton:hover, #addToWishlistButton:hover, #plusButton:hover, #lessButton:hover {
+ -fx-background-color: purchaseButtonColorHover;
+}
+
+#addToCartButton: pressed, #addToWishlistButton: pressed, #plusButton: pressed, #lessButton: pressed{
+ -fx-scale-x: 0.95;
+ -fx-scale-y: 0.95;
+}
+
+
+
+                                                                                           /* FINE PRODUCT VIEW */
+
+                                                                                           /* INIZIO WISHLIST */
+
+#vBoxWishlist {
+ -fx-background-color: backgroundColor;
+}
+
+#hBox1, #hBox2, #hBox3, #hBox4, #hBox5, #hBox6 {
+  -fx-background-color: boxColor;
+  -fx-background-radius: 10px;
+}
+
+#wishlistPriceProd1, #wishlistPriceProd2, #wishlistPriceProd3, #wishlistPriceProd4, #wishlistPriceProd5, #wishlistPriceProd6, #wishlistTitleProd1, #wishlistTitleProd2, #wishlistTitleProd3, #wishlistTitleProd4, #wishlistTitleProd5, #wishlistTitleProd6, #wishlistImage1, #wishlistImage2, #wishlistImage3, #wishlistImage4, #wishlistImage5, #wishlistImage6{
+ -fx-font-size: 30px;
+ -fx-cursor: hand;
+}
+
+#wishlistRemoveButton1, #wishlistRemoveButton2, #wishlistRemoveButton3, #wishlistRemoveButton4, #wishlistRemoveButton5, #wishlistRemoveButton6, #wishlistAddCartButton1, #wishlistAddCartButton2, #wishlistAddCartButton3, #wishlistAddCartButton4, #wishlistAddCartButton5, #wishlistAddCartButton6{
+ -fx-font-size: 12px;
+ -fx-cursor: hand;
+}
+
+#wishlistAddCartButton1: pressed, #wishlistAddCartButton2: pressed, #wishlistAddCartButton3: pressed, #wishlistAddCartButton4: pressed, #wishlistAddCartButton5: pressed, #wishlistAddCartButton6: pressed {
+ -fx-scale-x: 0.95;
+ -fx-scale-y: 0.95;
+}
+
+
+                                                                                           /* FINE WISHLIST */
+
+                                                                                           /* INIZIO ACCOUNT */
+
+#hBoxAccountPage, #scrollPaneAccount, #vBoxAccount {
+ -fx-background-color: backgroundColor;
+}
+
+#changePasswordText, #changePasswordButton, #sendReportButton, #sendReportText {
+ -fx-font-size: 14px;
+}
+
+#myOrderText, #addressText1, #addressText2, #balanceText1, #balanceText2, #nameText1, #nameText2, #surnameText1, #surnameText2 {
+ -fx-font-size: 20px;
+}
+
+#changePasswordButton, #sendReportButton {
+ -fx-cursor: hand;
+}
+
+#alertPasswordText {
+ -fx-fill: #ff0000;
+}
+
+#orderNumber1, #orderNumber2, #orderNumber3, #orderNumber4, #orderNumber5, #orderNumber6, #orderPrice1, #orderPrice2, #orderPrice3, #orderPrice4, #orderPrice5, #orderPrice6 {
+ -fx-font-size: 18px;
+}
+
+#orderText1, #orderText2, #orderText3, #orderText4, #orderText5, #orderText6 {
+ -fx-font-size: 16px;
+}
+
+#vBox1, #vBox2, #vBox3, #vBox4, #vBox5, #vBox6 {
+ -fx-background-color: boxColor;
+ -fx-background-radius: 8px;
+}
+
+
+                                                                                           /* FINE ACCOUNT */
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color : backgroundColor;
+    -fx-border-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :2.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+}
+
+.scroll-bar:horizontal .increment-button ,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 0.0 10.0 0.0;
+
+}
+
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+}
+
+ .scroll-bar .increment-arrow,
+ .scroll-bar .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.15em 0.0;
+}
+
+ .scroll-bar:vertical .increment-arrow,
+ .scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.0 0.15em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color :derive(scrollBarColor, 10.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color :derive(scrollBarHover, 10.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}

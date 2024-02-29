@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="1350.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.progetto.uid.progettouid.Controller.BoxPageController">
+   <children>
+      <VBox prefHeight="642.0" prefWidth="1350.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ScrollPane fx:id="scrollPaneBoxPage" prefHeight="1000.0" prefWidth="1350.0">
+               <content>
+                  <VBox fx:id="totalVboxBoxPage" prefHeight="594.0" prefWidth="1334.0" spacing="15.0">
+                     <padding>
+                        <Insets top="18.0" />
+                     </padding>
+                     <children>
+                        <HBox alignment="TOP_CENTER" prefHeight="251.0" prefWidth="1334.0" spacing="55.0">
+                           <children>
+                              <VBox fx:id="vBoxProduct1" alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="286.0" prefWidth="187.0" spacing="4.0">
+                                 <children>
+                                    <Text fx:id="titleText1" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="201.75711059570312">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fx:id="productImage1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text fx:id="priceText1" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="sellerText1" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: green;" text="Spedizione gratuita">
+                                       <VBox.margin>
+                                          <Insets top="-5.0" />
+                                       </VBox.margin></Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="-5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="vBoxProduct2" alignment="TOP_CENTER" layoutX="212.0" layoutY="10.0" prefHeight="286.0" prefWidth="187.0" spacing="4.0">
+                                 <children>
+                                    <Text fx:id="titleText2" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="201.75711059570312">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fx:id="productImage2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text fx:id="priceText2" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="sellerText2" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: green;" text="Spedizione gratuita">
+                                       <VBox.margin>
+                                          <Insets top="-5.0" />
+                                       </VBox.margin></Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="-5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="vBoxProduct3" alignment="TOP_CENTER" layoutX="415.0" layoutY="10.0" prefHeight="286.0" prefWidth="187.0" spacing="4.0">
+                                 <children>
+                                    <Text fx:id="titleText3" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="201.75711059570312">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fx:id="productImage3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text fx:id="priceText3" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="sellerText3" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: green;" text="Spedizione gratuita">
+                                       <VBox.margin>
+                                          <Insets top="-5.0" />
+                                       </VBox.margin></Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="-5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="vBoxProduct4" alignment="TOP_CENTER" layoutX="820.0" layoutY="10.0" prefHeight="286.0" prefWidth="187.0" spacing="4.0">
+                                 <children>
+                                    <Text fx:id="titleText4" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="201.75711059570312">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fx:id="productImage4" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text fx:id="priceText4" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="sellerText4" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: green;" text="Spedizione gratuita">
+                                       <VBox.margin>
+                                          <Insets top="-5.0" />
+                                       </VBox.margin></Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="-5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="vBoxProduct5" alignment="TOP_CENTER" layoutX="420.0" layoutY="10.0" prefHeight="286.0" prefWidth="187.0" spacing="4.0">
+                                 <children>
+                                    <Text fx:id="titleText5" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="201.75711059570312">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fx:id="productImage5" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text fx:id="priceText5" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="sellerText5" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: green;" text="Spedizione gratuita">
+                                       <VBox.margin>
+                                          <Insets top="-5.0" />
+                                       </VBox.margin></Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="-5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="28.0" prefHeight="286.0" prefWidth="1210.0" spacing="55.0">
+                           <children>
+                              <VBox fx:id="vBoxProduct6" alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="286.0" prefWidth="187.0" spacing="4.0">
+                                 <children>
+                                    <Text fx:id="titleText6" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="201.75711059570312">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fx:id="productImage6" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text fx:id="priceText6" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="sellerText6" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: green;" text="Spedizione gratuita">
+                                       <VBox.margin>
+                                          <Insets top="-5.0" />
+                                       </VBox.margin></Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="-5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="vBoxProduct7" alignment="TOP_CENTER" layoutX="212.0" layoutY="10.0" prefHeight="286.0" prefWidth="187.0" spacing="4.0">
+                                 <children>
+                                    <Text fx:id="titleText7" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="201.75711059570312">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fx:id="productImage7" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text fx:id="priceText7" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="sellerText7" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: green;" text="Spedizione gratuita">
+                                       <VBox.margin>
+                                          <Insets top="-5.0" />
+                                       </VBox.margin></Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="-5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="vBoxProduct8" alignment="TOP_CENTER" layoutX="415.0" layoutY="10.0" prefHeight="286.0" prefWidth="187.0" spacing="4.0">
+                                 <children>
+                                    <Text fx:id="titleText8" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="201.75711059570312">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fx:id="productImage8" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text fx:id="priceText8" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="sellerText8" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: green;" text="Spedizione gratuita">
+                                       <VBox.margin>
+                                          <Insets top="-5.0" />
+                                       </VBox.margin></Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="-5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="vBoxProduct9" alignment="TOP_CENTER" layoutX="820.0" layoutY="10.0" prefHeight="286.0" prefWidth="187.0" spacing="4.0">
+                                 <children>
+                                    <Text fx:id="titleText9" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="201.75711059570312">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fx:id="productImage9" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text fx:id="priceText9" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="sellerText9" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: green;" text="Spedizione gratuita">
+                                       <VBox.margin>
+                                          <Insets top="-5.0" />
+                                       </VBox.margin></Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="-5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="vBoxProduct10" alignment="TOP_CENTER" layoutX="420.0" layoutY="10.0" prefHeight="286.0" prefWidth="187.0" spacing="4.0">
+                                 <children>
+                                    <Text fx:id="titleText10" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="201.75711059570312">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fx:id="productImage10" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text fx:id="priceText10" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="sellerText10" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: green;" text="Spedizione gratuita">
+                                       <VBox.margin>
+                                          <Insets top="-5.0" />
+                                       </VBox.margin></Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="-5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="324.0" prefHeight="286.0" prefWidth="1210.0" spacing="55.0">
+                           <children>
+                              <VBox fx:id="vBoxProduct11" alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="286.0" prefWidth="187.0" spacing="4.0">
+                                 <children>
+                                    <Text fx:id="titleText11" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="201.75711059570312">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fx:id="productImage11" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text fx:id="priceText11" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="sellerText11" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: green;" text="Spedizione gratuita">
+                                       <VBox.margin>
+                                          <Insets top="-5.0" />
+                                       </VBox.margin></Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="-5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="vBoxProduct12" alignment="TOP_CENTER" layoutX="212.0" layoutY="10.0" prefHeight="286.0" prefWidth="187.0" spacing="4.0">
+                                 <children>
+                                    <Text fx:id="titleText12" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="201.75711059570312">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fx:id="productImage12" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text fx:id="priceText12" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="sellerText12" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: green;" text="Spedizione gratuita">
+                                       <VBox.margin>
+                                          <Insets top="-5.0" />
+                                       </VBox.margin></Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="-5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="vBoxProduct13" alignment="TOP_CENTER" layoutX="415.0" layoutY="10.0" prefHeight="286.0" prefWidth="187.0" spacing="4.0">
+                                 <children>
+                                    <Text fx:id="titleText13" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="201.75711059570312">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fx:id="productImage13" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text fx:id="priceText13" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="sellerText13" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: green;" text="Spedizione gratuita">
+                                       <VBox.margin>
+                                          <Insets top="-5.0" />
+                                       </VBox.margin></Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="-5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="vBoxProduct14" alignment="TOP_CENTER" layoutX="820.0" layoutY="10.0" prefHeight="286.0" prefWidth="187.0" spacing="4.0">
+                                 <children>
+                                    <Text fx:id="titleText14" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="201.75711059570312">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fx:id="productImage14" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text fx:id="priceText14" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="sellerText14" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: green;" text="Spedizione gratuita">
+                                       <VBox.margin>
+                                          <Insets top="-5.0" />
+                                       </VBox.margin></Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="-5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="vBoxProduct15" alignment="TOP_CENTER" layoutX="420.0" layoutY="10.0" prefHeight="286.0" prefWidth="187.0" spacing="4.0">
+                                 <children>
+                                    <Text fx:id="titleText15" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="201.75711059570312">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fx:id="productImage15" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text fx:id="priceText15" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="sellerText15" strokeType="OUTSIDE" strokeWidth="0.0">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: green;" text="Spedizione  gratuita">
+                                       <VBox.margin>
+                                          <Insets top="-5.0" />
+                                       </VBox.margin></Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets top="-5.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="registrationAnchorPane" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#enterPressed" prefHeight="666.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.progetto.uid.progettouid.Controller.RegistrationController">
+   <children>
+      <AnchorPane fx:id="registrationUpperPane" layoutY="-17.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" layoutY="17.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="carDocLogoIcon" fitHeight="164.0" fitWidth="180.0" onMouseClicked="#returnHomeAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Loghi/Loghi/CarDocLogo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <ImageView fx:id="returnHomeImage" fitHeight="52.0" fitWidth="52.0" layoutY="-1.0" onMouseClicked="#returnHomeAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Loghi/Loghi/download.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" layoutX="129.0" layoutY="333.0" prefHeight="485.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="181.0">
+         <children>
+            <Pane fx:id="boxRegistration" prefHeight="434.0" prefWidth="528.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" layoutX="-1.0" layoutY="19.0" prefHeight="453.0" prefWidth="530.0" spacing="20.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="52.0" prefWidth="522.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Creare un nuovo account" textAlignment="CENTER" wrappingWidth="388.87001037597656">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Registrazione istantanea" textAlignment="CENTER" wrappingWidth="356.103515625">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="8.0">
+                           <children>
+                              <TextField fx:id="nameField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="388.0" promptText="Nome*" />
+                              <TextField fx:id="surnameField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="388.0" promptText="Cognome*" />
+                              <TextField fx:id="emailField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="388.0" promptText="Email*" />
+                              <PasswordField fx:id="passwordField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="388.0" promptText="Password*" />
+                              <PasswordField fx:id="repeatPasswordField" layoutX="81.0" layoutY="134.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="388.0" promptText="Ripeta la password*" />
+                           </children>
+                        </VBox>
+                        <HBox maxWidth="-Infinity" prefHeight="22.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Si prega di prendere visione della nostra " textAlignment="RIGHT" wrappingWidth="316.287109375" />
+                              <Text fx:id="privacyInformationText" fill="#0477ef" onMouseClicked="#privacyInformationAction" strokeType="OUTSIDE" strokeWidth="0.0" text="informativa sulla privacy." underline="true" wrappingWidth="227.236328125" />
+                           </children>
+                        </HBox>
+                        <Button fx:id="createAccountButton" mnemonicParsing="false" onAction="#createAccountAction" prefHeight="34.0" prefWidth="388.0" text="Crea account" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

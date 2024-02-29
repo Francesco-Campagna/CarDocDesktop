@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.progetto.uid.progettouid.Controller.WishlistController">
+   <children>
+      <VBox fx:id="vBoxWishlist" layoutY="24.0" prefHeight="600.0" prefWidth="1337.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#000000e5" strokeType="OUTSIDE" strokeWidth="0.0" text="Il mio CARDOC" wrappingWidth="205.92471313476562">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" top="8.0" />
+               </VBox.margin>
+            </Text>
+            <HBox alignment="CENTER_LEFT" prefHeight="56.0" prefWidth="1270.0" spacing="150.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="305.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../Loghi/Loghi/wishlistaccountlogo.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="userText" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="331.2000517845154">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </HBox>
+                  <Text fx:id="addedToCartText" strokeType="OUTSIDE" strokeWidth="0.0" text="Prodotto aggiunto al carrello!" visible="false" wrappingWidth="271.13671875">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="380.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../Loghi/Loghi/wallet.png" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Saldo dell'account:" wrappingWidth="119.2734375">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Text>
+                        <Text fx:id="balanceText" strokeType="OUTSIDE" strokeWidth="0.0" text="0,00€" textAlignment="RIGHT" wrappingWidth="94.532470703125">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <ScrollPane focusTraversable="false" prefHeight="550.0" prefWidth="1304.0" style="-fx-background-color: transparent;">
+               <content>
+                  <VBox fx:id="vBoxWishlist" alignment="TOP_RIGHT" prefHeight="700.0" prefWidth="1314.0">
+                     <children>
+                        <HBox prefHeight="229.0" prefWidth="1304.0" spacing="16.0">
+                           <children>
+                              <HBox fx:id="hBox1" prefHeight="215.0" prefWidth="643.0" visible="false">
+                                 <children>
+                                    <ImageView fx:id="wishlistImage1" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="422.0" spacing="10.0">
+                                       <children>
+                                          <Text fx:id="wishlistTitleProd1" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="432.13671875">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="wishlistPriceProd1" layoutX="10.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="431.13671875">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <Button fx:id="wishlistAddCartButton1" mnemonicParsing="false" prefHeight="30.0" prefWidth="166.0" text="Aggiungi al carrello" />
+                                          <Button fx:id="wishlistRemoveButton1" layoutX="10.0" layoutY="55.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="166.0" text="Rimuovi" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <HBox fx:id="hBox2" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" visible="false">
+                                 <children>
+                                    <ImageView fx:id="wishlistImage2" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="422.0" spacing="10.0">
+                                       <children>
+                                          <Text fx:id="wishlistTitleProd2" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="432.13671875">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="wishlistPriceProd2" layoutX="10.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="431.13671875">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <Button fx:id="wishlistAddCartButton2" mnemonicParsing="false" prefHeight="30.0" prefWidth="166.0" text="Aggiungi al carrello" />
+                                          <Button fx:id="wishlistRemoveButton2" layoutX="10.0" layoutY="55.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="166.0" text="Rimuovi" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="-10.0" top="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="240.0" prefWidth="1336.0" spacing="16.0">
+                           <children>
+                              <HBox fx:id="hBox3" prefHeight="100.0" prefWidth="200.0" visible="false">
+                                 <children>
+                                    <ImageView fx:id="wishlistImage3" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="422.0" spacing="10.0">
+                                       <children>
+                                          <Text fx:id="wishlistTitleProd3" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="432.13671875">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="wishlistPriceProd3" layoutX="10.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="431.13671875">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <Button fx:id="wishlistAddCartButton3" mnemonicParsing="false" prefHeight="30.0" prefWidth="166.0" text="Aggiungi al carrello" />
+                                          <Button fx:id="wishlistRemoveButton3" layoutX="10.0" layoutY="55.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="166.0" text="Rimuovi" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <HBox fx:id="hBox4" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" visible="false">
+                                 <children>
+                                    <ImageView fx:id="wishlistImage4" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="422.0" spacing="10.0">
+                                       <children>
+                                          <Text fx:id="wishlistTitleProd4" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="432.13671875">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="wishlistPriceProd4" layoutX="10.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="431.13671875">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <Button fx:id="wishlistAddCartButton4" mnemonicParsing="false" prefHeight="30.0" prefWidth="166.0" text="Aggiungi al carrello" />
+                                          <Button fx:id="wishlistRemoveButton4" layoutX="10.0" layoutY="55.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="166.0" text="Rimuovi" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="-10.0" top="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="240.0" prefWidth="1336.0" spacing="16.0">
+                           <children>
+                              <HBox fx:id="hBox5" prefHeight="100.0" prefWidth="200.0" visible="false">
+                                 <children>
+                                    <ImageView fx:id="wishlistImage5" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="422.0" spacing="10.0">
+                                       <children>
+                                          <Text fx:id="wishlistTitleProd5" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="432.13671875">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="wishlistPriceProd5" layoutX="10.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="431.13671875">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <Button fx:id="wishlistAddCartButton5" mnemonicParsing="false" prefHeight="30.0" prefWidth="166.0" text="Aggiungi al carrello" />
+                                          <Button fx:id="wishlistRemoveButton5" layoutX="10.0" layoutY="55.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="166.0" text="Rimuovi" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <HBox fx:id="hBox6" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" visible="false">
+                                 <children>
+                                    <ImageView fx:id="wishlistImage6" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="422.0" spacing="10.0">
+                                       <children>
+                                          <Text fx:id="wishlistTitleProd6" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="432.13671875">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="wishlistPriceProd6" layoutX="10.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="431.13671875">
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <Button fx:id="wishlistAddCartButton6" mnemonicParsing="false" prefHeight="30.0" prefWidth="166.0" text="Aggiungi al carrello" />
+                                          <Button fx:id="wishlistRemoveButton6" layoutX="10.0" layoutY="55.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="166.0" text="Rimuovi" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="-10.0" top="10.0" />
+                                 </HBox.margin>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

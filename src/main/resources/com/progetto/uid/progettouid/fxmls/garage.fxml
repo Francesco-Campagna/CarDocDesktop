@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.progetto.uid.progettouid.Controller.GarageController">
+   <children>
+      <VBox fx:id="vBoxGarage" layoutY="2.0" prefHeight="642.0" prefWidth="1350.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fx:id="emptyGarageText" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="363.13671875">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="9.0" />
+               </VBox.margin>
+            </Text>
+            <ScrollPane fx:id="scrollPaneGarage" prefHeight="587.0" prefWidth="1310.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" />
+               </VBox.margin>
+               <content>
+                  <HBox fx:id="hBoxGarage" fillHeight="false" prefHeight="595.0" prefWidth="1314.0">
+                     <children>
+                        <VBox fx:id="vBoxCar" prefHeight="304.0" prefWidth="652.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="180.0" prefWidth="616.0" spacing="8.0">
+                                 <children>
+                                    <ImageView fx:id="carImage1" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin></ImageView>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="180.0" prefWidth="498.0">
+                                       <children>
+                                          <Text fx:id="carText1" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="200.0" />
+                                          <Button fx:id="removeCarButton1" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" text="Rimuovi" visible="false">
+                                             <HBox.margin>
+                                                <Insets left="150.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="180.0" prefWidth="616.0" spacing="8.0">
+                                 <children>
+                                    <ImageView fx:id="carImage2" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="486.0">
+                                       <children>
+                                          <Text fx:id="carText2" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="200.0" />
+                                          <Button fx:id="removeCarButton2" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" text="Rimuovi" visible="false">
+                                             <HBox.margin>
+                                                <Insets left="150.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="642.0" prefWidth="1.0" />
+                        <VBox alignment="CENTER" prefHeight="523.0" prefWidth="643.0" style="-fx-background-radius: 10;">
+                           <children>
+                              <AnchorPane fx:id="boxAddCar" prefHeight="332.0" prefWidth="514.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="332.0" prefWidth="536.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="320.0">
+                                             <children>
+                                                <ImageView fitHeight="54.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Loghi/Loghi/addCar.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Text fx:id="addCarText" strokeType="OUTSIDE" strokeWidth="0.0" text="Aggiungi un veicolo al tuo garage" wrappingWidth="236.35546875">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </HBox>
+                                          <VBox alignment="CENTER" prefHeight="99.0" prefWidth="530.0" spacing="8.0">
+                                             <children>
+                                                <ComboBox fx:id="brandComboBox" prefHeight="34.0" prefWidth="388.0" promptText="Scelga una marca" />
+                                                <ComboBox fx:id="modelComboBox" layoutX="46.0" layoutY="43.0" prefHeight="34.0" prefWidth="388.0" promptText="Scelga un modello" />
+                                             </children>
+                                          </VBox>
+                                          <Button fx:id="addCarButton" mnemonicParsing="false" onAction="#addCarButtonAction" prefHeight="26.0" prefWidth="388.0" text="Aggiungi veicolo" textFill="WHITE">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Button>
+                                          <HBox alignment="CENTER" layoutX="98.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="320.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Il suo veicolo non è presente nel catalogo? " />
+                                                <Text fx:id="clickHereText" fill="#0477ef" onMouseClicked="#clickHereAction" strokeType="OUTSIDE" strokeWidth="0.0" text="Clicchi qui!" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="40.0" right="46.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="5.0" top="5.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </HBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

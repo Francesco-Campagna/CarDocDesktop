@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.progetto.uid.progettouid.Controller.CartController">
+   <children>
+      <ScrollPane fx:id="scrollPaneCart" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox fx:id="vBoxCartPage" prefHeight="850.0" prefWidth="1334.0" spacing="5.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="72.0" prefWidth="1350.0">
+                     <children>
+                        <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                        <ImageView fx:id="arrowContinuePurchase" fitHeight="38.0" fitWidth="34.0" onMouseClicked="#returnHomeAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Loghi/Loghi/download.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="continuePurchaseText" onMouseClicked="#returnHomeAction" strokeType="OUTSIDE" strokeWidth="0.0" text="continuare l'acquisto" wrappingWidth="121.806640625" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="44.0" prefWidth="388.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Totale dell'ordine:" />
+                        <Separator orientation="VERTICAL" prefHeight="200.0" visible="false" />
+                        <Text fx:id="totalPrice1" strokeType="OUTSIDE" strokeWidth="0.0" text="0,00€">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Separator layoutX="109.0" layoutY="10.0" orientation="VERTICAL" prefHeight="44.0" prefWidth="23.0" visible="false" />
+                        <Button fx:id="purchaseButton" mnemonicParsing="false" onAction="#purchaseAction" prefHeight="35.0" prefWidth="224.0" text="Procedere con l'ordine">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding>
+                  </HBox>
+                  <VBox fx:id="cartBoxPane" alignment="CENTER" prefHeight="355.0" prefWidth="1303.0">
+                     <children>
+                        <ScrollPane prefHeight="350.0" prefWidth="1282.0" style="-fx-background-color: transparent;">
+                           <content>
+                              <VBox fx:id="vBoxCartPage" prefHeight="1300.0" prefWidth="1308.0" spacing="20.0">
+                                 <children>
+                                    <HBox fx:id="hBox1" prefHeight="152.0" prefWidth="255.0" spacing="8.0" visible="false">
+                                       <children>
+                                          <ImageView fx:id="cartImage1" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <HBox.margin>
+                                                <Insets left="8.0" />
+                                             </HBox.margin></ImageView>
+                                          <Text fx:id="titleCartProd1" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="924.13671875">
+                                             <HBox.margin>
+                                                <Insets top="2.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <VBox alignment="CENTER" prefHeight="200.0" prefWidth="190.0">
+                                             <children>
+                                                <Text fx:id="cartItemPriceText1" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="83.0">
+                                                   <font>
+                                                      <Font size="25.0" />
+                                                   </font>
+                                                </Text>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Button fx:id="lessButton1" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" text="-" />
+                                                      <TextField fx:id="amountField1" alignment="CENTER" editable="false" prefHeight="35.0" prefWidth="51.0" text="1" />
+                                                      <Button fx:id="plusButton1" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" text="+" />
+                                                   </children>
+                                                </HBox>
+                                                <Button fx:id="removeItemButton1" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" text="Rimuovi" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox fx:id="hBox2" layoutX="10.0" layoutY="10.0" prefHeight="152.0" prefWidth="255.0" spacing="8.0" visible="false">
+                                       <children>
+                                          <ImageView fx:id="cartImage2" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <HBox.margin>
+                                                <Insets left="8.0" />
+                                             </HBox.margin></ImageView>
+                                          <Text fx:id="titleCartProd2" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="924.13671875">
+                                             <HBox.margin>
+                                                <Insets top="2.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <VBox alignment="CENTER" prefHeight="200.0" prefWidth="190.0">
+                                             <children>
+                                                <Text fx:id="cartItemPriceText2" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="83.0">
+                                                   <font>
+                                                      <Font size="25.0" />
+                                                   </font>
+                                                </Text>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Button fx:id="lessButton2" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" text="-" />
+                                                      <TextField fx:id="amountField2" alignment="CENTER" editable="false" prefHeight="35.0" prefWidth="51.0" text="1" />
+                                                      <Button fx:id="plusButton2" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" text="+" />
+                                                   </children>
+                                                </HBox>
+                                                <Button fx:id="removeItemButton2" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" text="Rimuovi" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox fx:id="hBox3" layoutX="10.0" layoutY="230.0" prefHeight="152.0" prefWidth="255.0" spacing="8.0" visible="false">
+                                       <children>
+                                          <ImageView fx:id="cartImage3" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <HBox.margin>
+                                                <Insets left="8.0" />
+                                             </HBox.margin></ImageView>
+                                          <Text fx:id="titleCartProd3" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="924.13671875">
+                                             <HBox.margin>
+                                                <Insets top="2.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <VBox alignment="CENTER" prefHeight="200.0" prefWidth="190.0">
+                                             <children>
+                                                <Text fx:id="cartItemPriceText3" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="83.0">
+                                                   <font>
+                                                      <Font size="25.0" />
+                                                   </font>
+                                                </Text>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Button fx:id="lessButton3" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" text="-" />
+                                                      <TextField fx:id="amountField3" alignment="CENTER" editable="false" prefHeight="35.0" prefWidth="51.0" text="1" />
+                                                      <Button fx:id="plusButton3" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" text="+" />
+                                                   </children>
+                                                </HBox>
+                                                <Button fx:id="removeItemButton3" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" text="Rimuovi" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox fx:id="hBox4" layoutX="10.0" layoutY="450.0" prefHeight="152.0" prefWidth="255.0" spacing="8.0" visible="false">
+                                       <children>
+                                          <ImageView fx:id="cartImage4" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <HBox.margin>
+                                                <Insets left="8.0" />
+                                             </HBox.margin></ImageView>
+                                          <Text fx:id="titleCartProd4" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="924.13671875">
+                                             <HBox.margin>
+                                                <Insets top="2.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <VBox alignment="CENTER" prefHeight="200.0" prefWidth="190.0">
+                                             <children>
+                                                <Text fx:id="cartItemPriceText4" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="83.0">
+                                                   <font>
+                                                      <Font size="25.0" />
+                                                   </font>
+                                                </Text>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Button fx:id="lessButton4" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" text="-" />
+                                                      <TextField fx:id="amountField4" alignment="CENTER" editable="false" prefHeight="35.0" prefWidth="51.0" text="1" />
+                                                      <Button fx:id="plusButton4" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" text="+" />
+                                                   </children>
+                                                </HBox>
+                                                <Button fx:id="removeItemButton4" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" text="Rimuovi" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox fx:id="hBox5" layoutX="10.0" layoutY="670.0" prefHeight="152.0" prefWidth="255.0" spacing="8.0" visible="false">
+                                       <children>
+                                          <ImageView fx:id="cartImage5" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <HBox.margin>
+                                                <Insets left="8.0" />
+                                             </HBox.margin></ImageView>
+                                          <Text fx:id="titleCartProd5" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="924.13671875">
+                                             <HBox.margin>
+                                                <Insets top="2.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <VBox alignment="CENTER" prefHeight="200.0" prefWidth="190.0">
+                                             <children>
+                                                <Text fx:id="cartItemPriceText5" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="83.0">
+                                                   <font>
+                                                      <Font size="25.0" />
+                                                   </font>
+                                                </Text>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Button fx:id="lessButton5" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" text="-" />
+                                                      <TextField fx:id="amountField5" alignment="CENTER" editable="false" prefHeight="35.0" prefWidth="51.0" text="1" />
+                                                      <Button fx:id="plusButton5" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" text="+" />
+                                                   </children>
+                                                </HBox>
+                                                <Button fx:id="removeItemButton5" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" text="Rimuovi" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox fx:id="hBox6" layoutX="10.0" layoutY="890.0" prefHeight="152.0" prefWidth="255.0" spacing="8.0" visible="false">
+                                       <children>
+                                          <ImageView fx:id="cartImage6" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <HBox.margin>
+                                                <Insets left="8.0" />
+                                             </HBox.margin></ImageView>
+                                          <Text fx:id="titleCartProd6" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="924.13671875">
+                                             <HBox.margin>
+                                                <Insets top="2.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="30.0" />
+                                             </font>
+                                          </Text>
+                                          <VBox alignment="CENTER" prefHeight="200.0" prefWidth="190.0">
+                                             <children>
+                                                <Text fx:id="cartItemPriceText6" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="83.0">
+                                                   <font>
+                                                      <Font size="25.0" />
+                                                   </font>
+                                                </Text>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Button fx:id="lessButton6" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" text="-" />
+                                                      <TextField fx:id="amountField6" alignment="CENTER" editable="false" prefHeight="35.0" prefWidth="51.0" text="1" />
+                                                      <Button fx:id="plusButton6" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" text="+" />
+                                                   </children>
+                                                </HBox>
+                                                <Button fx:id="removeItemButton6" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" text="Rimuovi" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <VBox fx:id="checkOutBox" alignment="CENTER_LEFT" layoutX="1084.0" layoutY="5.0" prefHeight="174.0" prefWidth="252.0" spacing="4.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="21.0" prefWidth="215.0">
+                                 <children>
+                                    <Text fx:id="yourOrderText" strokeType="OUTSIDE" strokeWidth="0.0" text="Il tuo ordine:" wrappingWidth="201.640625">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <VBox alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="948.0">
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="215.0" spacing="39.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prezzo totale della merce" wrappingWidth="136.224609375" />
+                                          <Text fx:id="totalPrice2" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0,00€" textAlignment="RIGHT" wrappingWidth="49.4765625" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="215.0" spacing="83.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Consegna" wrappingWidth="75.58203125" />
+                                          <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="44.0">
+                                             <children>
+                                                <ImageView fitHeight="37.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Loghi/Loghi/shipping.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0,00€" textAlignment="RIGHT" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="6.0" />
+                                 </padding>
+                              </VBox>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="215.0" spacing="28.0">
+                                 <children>
+                                    <Text fx:id="totalOrderText" strokeType="OUTSIDE" strokeWidth="0.0" text="Totale dell'ordine" textAlignment="CENTER" wrappingWidth="122.4677734375">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Text>
+                                    <Text fx:id="totalPrice3" strokeType="OUTSIDE" strokeWidth="0.0" text="0,00€" textAlignment="RIGHT" wrappingWidth="84.595703125">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <Button fx:id="purchaseButton" mnemonicParsing="false" onAction="#purchaseAction" prefHeight="35.0" prefWidth="253.0" text="Procedere con l'ordine">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="12.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets right="15.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
